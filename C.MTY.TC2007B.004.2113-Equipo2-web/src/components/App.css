@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+  --primary-red: #FF5C4D;
+  --primary-orange: #FF9636;
+  --primary-yellow: #FFCD58;
+  --primary-green: #DAD870;
+  --primary-blue: #041c53;
+  --secondary-blue: #04132b;
+  --primary-white: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/***************NAVBAR************************/
+.logo{
+  width: 5.25rem;
+}
+
+
+
+/******************MENU LINKS******************/
+nav a.nav-link{
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+Button{
+  background-color: var(--primary-green) !important;
+  margin-left: 15rem !important;
+}
+
+.button{
+  margin-top: 1rem;
+  margin-left: 0rem !important;
+}
+
+.button2{
+  margin-top: 1rem;
+  margin-left: 10rem !important;
+}
+
+.button3{
+  margin-top: 1rem;
+  margin-left: 30rem !important;
+}
+
+.button1{
+  margin-top: 0rem;
+  margin-left: 5rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top: 0.1875rem solid var(--primary-green);
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 0.1875rem solid var(--primary-green);
+}
+
+@media(max-width: 1029px){
+  Button{
+    margin-left: -3rem !important;
+  }
+}
+
+
+
+/***************HEADER************************/
+.header-wraper{
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(headerBackground.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-info h1{
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/**************TYPED TEXT************************/
+.typed-text{
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+
+/**************DONACIONES************************/
+.donacionesHeading{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 100;
+}
+
+.donaciones{
+  height: 30vh;
+  padding: 5rem;
+}
+
+/**************EQUIPOS**********************/
+
+.equipos{
+  margin-top: 5rem;
+  height: 50vh;
+  padding: 5rem;
+}
+
+.equiposHeading{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 100;
+}
+
+.textEquipo{
+  padding-right: 3rem;
+  padding-top: 1.5rem;
+}
+
+/**************PUNTAJE**********************/
+
+.puntajeHeading{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 100;
+}
+
+.puntaje{
+  height: 30vh;
+  padding: 5rem;
+}
+
+
+.card{
+flex: 1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 20rem;
+margin-top: 5rem;
+margin-right: 20rem;
+}
+
+.regresar{
+  margin-left: 0rem;
+}
+
+.logo2{
+  margin-left: 3.6rem;
+}
+
+.logoLogIn{
+  width: 12rem;
+  margin-left: 1rem;
+  margin-top:-1rem
+}
+
+.input{
+  margin-left: 4rem !important;
+}
+
+.copy{
+  margin-top: -2rem !important;
+  margin-left: 7rem;
+}
+
+.link{
+  color: #FF9636;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #ff8a1f;
+}
+
+.cardDonaciones{
+  margin-left: 15rem !important;
+  margin-right: 15rem !important;
+}
+
+.registro{
+  margin-left:16.5rem !important;
+}
+
+.cardPuntaje{
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem !important;
+  margin-top: 5rem;
+  margin-right: 10rem !important;
+}
+
+TableHead{
+  color:#041c53 !important;
+}
+
+h3{
+  margin-top: 2rem !important;
+  color: #FF9636;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 200 !important;
+}
+
+.tableRow{
+  background-color: #ffbe81;
+}
+
+.data{
+  text-align: center !important;
+}
